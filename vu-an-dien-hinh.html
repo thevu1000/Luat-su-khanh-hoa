@@ -219,9 +219,10 @@
                 <div class="banner-page-child">
                     <div class="container containerCustom1">
                         <div class="inner">
-                            <h1 class="title-page">Vụ án điển hình</h1>
-                            <p>Tập hợp một số vụ án có sự tham gia của Luật sư Vũ Như Hảo với vai trò chính bảo vệ quyền
-                                lợi cho khách hàng.</p>
+                            <h1 class="title-page">Hình sự</h1>
+                            <p>Danh mục Hình sự cung cấp thông tin về các vụ án liên quan đến các
+                                tội phạm như trộm cắp, lừa đảo, buôn bán ma túy, và các hành vi vi
+                                phạm pháp luật nghiêm trọng khác.</p>
                         </div>
                     </div>
                 </div>
@@ -244,7 +245,10 @@
                                         <div class="dateUpload">
                                             <label>Ngày đăng tải</label>
                                             <div class="inputWrap">
-                                                <input type="text">
+                                                <input type="text" placeholder="Nhập khoảng thời gian đăng tải">
+                                                <div class="calendarIcon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"/></svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -254,7 +258,6 @@
                                             <label>Loại án</label>
 
                                             <select class="caseTypeDropdown">
-                                                <option value="Tất cả">Tất cả</option>
                                                 <option value="Hình sự">Hình sự</option>
                                                 <option value="Dân sự">Dân sự</option>
                                                 <option value="Kinh doanh thương mại">Kinh doanh thương mại</option>
@@ -268,6 +271,7 @@
                                         <div class="severityLevel">
                                             <label>Mức độ nghiêm trọng</label>
                                             <select class="severityLevelDropdown">
+                                                <option value="" disabled selected hidden>Nhập mức độ nghiêm trọng của vụ án</option>
                                                 <option value="Nhẹ">Nhẹ</option>
                                                 <option value="Trung bình">Trung bình</option>
                                                 <option value="Nghiêm trọng">Nghiêm trọng</option>
@@ -279,6 +283,7 @@
                                         <div class="year">
                                             <label>Năm diễn ra vụ án</label>
                                             <select class="yearDropdown">
+                                                <option value="" disabled selected hidden>Nhập năm diễn ra vụ án</option>
                                                 <option value="2025">2025</option>
                                                 <option value="2024">2024</option>
                                                 <option value="2023">2023</option>

@@ -76,8 +76,18 @@ function create_custom_dropdowns() {
             var dropdown = $(this).next();
             var options = $(select).find('option');
             var selected = $(this).find('option:selected');
-            dropdown.find('.current').html(selected.data('display-text') || selected.text());
+            var placeholder = $(this).find('option[disabled][hidden]').text(); // Lấy placeholder
+
+            // Hiển thị placeholder và thêm lớp `placeholder` nếu không có tùy chọn nào được chọn
+            if (!selected.val()) {
+                dropdown.find('.current').html(placeholder).addClass('placeholder');
+            } else {
+                dropdown.find('.current').html(selected.data('display-text') || selected.text()).removeClass('placeholder');
+            }
+
             options.each(function (j, o) {
+                if ($(o).is(':disabled')) return;
+
                 var display = $(o).data('display-text') || '';
                 dropdown.find('ul').append('<li class="option ' + ($(o).is(':selected') ? 'selected' : '') + '" data-value="' + $(o).val() + '" data-display-text="' + display + '">' + $(o).text() + '</li>');
             });
@@ -87,7 +97,7 @@ function create_custom_dropdowns() {
 
 // Event listeners
 
-// Open/close
+// Open/close dropdown
 $(document).on('click', '.dropdown', function (event) {
     $('.dropdown').not($(this)).removeClass('open');
     $(this).toggleClass('open');
@@ -99,7 +109,8 @@ $(document).on('click', '.dropdown', function (event) {
         $(this).focus();
     }
 });
-// Close when clicking outside
+
+// Close dropdown when clicking outside
 $(document).on('click', function (event) {
     if ($(event.target).closest('.dropdown').length === 0) {
         $('.dropdown').removeClass('open');
@@ -107,16 +118,18 @@ $(document).on('click', function (event) {
     }
     event.stopPropagation();
 });
+
 // Option click
 $(document).on('click', '.dropdown .option', function (event) {
     $(this).closest('.list').find('.selected').removeClass('selected');
     $(this).addClass('selected');
     var text = $(this).data('display-text') || $(this).text();
-    $(this).closest('.dropdown').find('.current').text(text);
-    $(this).closest('.dropdown').prev('select').val($(this).data('value')).trigger('change');
+    var dropdown = $(this).closest('.dropdown');
+    dropdown.find('.current').text(text).removeClass('placeholder');
+    dropdown.prev('select').val($(this).data('value')).trigger('change');
 });
 
-// Keyboard events
+// Keyboard events for navigation
 $(document).on('keydown', '.dropdown', function (event) {
     var focused_option = $($(this).find('.list .option:focus')[0] || $(this).find('.list .option.selected')[0]);
     // Space or Enter
@@ -127,7 +140,7 @@ $(document).on('keydown', '.dropdown', function (event) {
             $(this).trigger('click');
         }
         return false;
-        // Down
+    // Down
     } else if (event.keyCode == 40) {
         if (!$(this).hasClass('open')) {
             $(this).trigger('click');
@@ -135,16 +148,15 @@ $(document).on('keydown', '.dropdown', function (event) {
             focused_option.next().focus();
         }
         return false;
-        // Up
+    // Up
     } else if (event.keyCode == 38) {
         if (!$(this).hasClass('open')) {
             $(this).trigger('click');
         } else {
-            var focused_option = $($(this).find('.list .option:focus')[0] || $(this).find('.list .option.selected')[0]);
             focused_option.prev().focus();
         }
         return false;
-        // Esc
+    // Esc
     } else if (event.keyCode == 27) {
         if ($(this).hasClass('open')) {
             $(this).trigger('click');
@@ -153,89 +165,12 @@ $(document).on('keydown', '.dropdown', function (event) {
     }
 });
 
-function setMaxFitContentWidth(parentSelector) {
-    const $parent = $(parentSelector);
-    if ($parent.length === 0) return;
-
-    const $listItems = $parent.find("li");
-    if ($listItems.length === 0) return;
-
-    let maxWidth = 0;
-
-    $listItems.each(function (index) {
-        const $li = $(this);
-
-        const originalWidth = $li.css("width");
-
-        // Đặt tạm thời width = fit-content
-        $li.css("width", "fit-content");
-
-        // Đo chiều rộng thực tế bao gồm cả padding
-        const width = $li.outerWidth(true); // `true` để tính padding + border
-
-        // Log ra chiều rộng của từng <li>
-        console.log(`Width of li[${index}] (with padding): ${width}px`);
-
-        // Cập nhật maxWidth nếu cần
-        if (width > maxWidth) {
-            maxWidth = width;
-        }
-
-        // Khôi phục chiều rộng ban đầu
-        $li.css("width", originalWidth);
-    });
-
-    // Đặt chiều rộng của phần tử cha
-    console.log(`Max width found (with padding): ${maxWidth}px`);
-    $parent.css("width", maxWidth + 46 + "px");
-
-    // Đặt width 100% cho tất cả <li>
-    $listItems.css("width", "100%");
-}
-
-
-
-
-// function setUniformLiWidth(parentSelector) {
-//     // Lấy tất cả các <li> trong thành phần cha
-//     const $listItems = $(parentSelector).find("li");
-//     if ($listItems.length === 0) return;
-
-//     let maxWidth = 0;
-
-//     // Lặp qua từng <li> để tìm chiều rộng lớn nhất
-//     $listItems.each(function () {
-//         const $li = $(this);
-
-//         // Lưu chiều rộng ban đầu và đặt tạm "fit-content"
-//         const originalWidth = $li.css("width");
-//         $li.css("width", "fit-content");
-
-//         // Đo chiều rộng thực tế
-//         const width = $li.outerWidth();
-
-//         // Cập nhật giá trị maxWidth
-//         if (width > maxWidth) {
-//             maxWidth = width;
-//         }
-
-//         // Khôi phục chiều rộng ban đầu
-//         $li.css("width", originalWidth);
-//     });
-
-//     // Đặt chiều rộng lớn nhất cho tất cả các <li>
-//     $listItems.css("width", maxWidth + "px");
-// }
-
 $(document).ready(function () {
     $(".dateUpload input").flatpickr({
         dateFormat: "d-m-Y",
         mode: "range",
         locale: "vn"
     });
-
     create_custom_dropdowns();
-    // setMaxFitContentWidth('.caseType .dropdown, .severityLevelDropdown .dropdown, .yearDropdown');
-    // setUniformLiWidth(".dropdown ul");
-})
+});
 

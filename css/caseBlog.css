@@ -11,7 +11,7 @@
 
         align-items: center;
         border: 1px solid #d2dae2;
-        padding: 12px 15px 12px 10px;
+        padding: 0 15px 0 10px;
         border-radius: 8px;
 
         .icon {
@@ -28,7 +28,8 @@
             outline: none;
             border: none;
             width: 100%;
-            height: 55px;
+            height: 40px;
+            padding: 12px 0;
             margin-left: 5px;
         }
     }
@@ -94,6 +95,11 @@
                 height: 100%;
                 background-color: #ffff;
                 border: 1px solid #d2dae2;
+                .current {
+                    &.placeholder {
+                        color: #9e9e9e;
+                    }
+                }
             }
         }
 
@@ -154,15 +160,29 @@
             .inputWrap {
                 height: 100%;
                 width: 100%;
+                display: flex;
+                border: 1px solid #d2dae2;
+                align-items: center;
+                border-radius: 8px;
 
+                padding-right: 18px;
+                .calendarIcon {
+                    display: flex;
+                    align-items: center;
+                }
+                svg {
+                    height: 20px;
+                    color: #9e9e9e;
+                }
                 input {
                     outline: none;
-                    border: 1px solid #d2dae2;
                     height: 100%;
-                    border-radius: 8px;
+                    border: none;
+                    outline: none;
                     min-width: 190px;
                     width: 100%;
                     padding: 0 18px;
+                    padding-right: 0;
                     @media screen and (max-width: 991px) {
                         min-width: 0;
 
@@ -215,4 +235,12 @@
             }
         }
     }
+}
+
+.dropdown {
+    .current {
+        &.placeholder {
+            color: #9e9e9e;
+        }
+    }   
 }
