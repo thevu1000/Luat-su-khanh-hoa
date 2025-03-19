@@ -715,22 +715,18 @@
                                         <div class="formWrap">
                                             <div class="titleWrap">
                                                 <h3>Gửi yêu cầu tư vấn</h3>
-                                                <p>Vui lòng điền đầy đủ thông tin, chúng tôi sẽ liên hệ lại trong thời
-                                                    gian sớm nhất</p>
+                                                <p>Vui lòng điền đầy đủ thông tin, chúng tôi sẽ liên hệ lại trong thời gian sớm nhất</p>
                                             </div>
                                             <div class="validationEngineContainer">
-                                                <input type="text" class="input validate[required]"
-                                                    placeholder="Họ tên" />
+                                                <input type="text" class="input validate[required]" placeholder="Họ tên" />
                                                 <input type="text" class="input validate[required,custom[email]]"
                                                     placeholder="Nhập địa chỉ email" />
-                                                <input type="text" class="input validate[required]"
-                                                    placeholder="Tiêu đề" />
-                                                <textarea class="form-control input validate[required]"
-                                                    placeholder="Nội dung"></textarea>
+                                                <input type="text" class="input validate[required]" placeholder="Tiêu đề" />
+                                                <textarea class="form-control input validate[required]" placeholder="Nội dung"></textarea>
                                                 <div class="form-group capcha1">
-                                                    <label>Mã bảo vệ</label>
+                                                    <label for="captchaInput">Mã bảo vệ</label>
                                                     <div class="captchaInputField">
-                                                        <input type="text" class="capcha-i validate[required]" />
+                                                        <input type="text" name="captchaInput" class="capcha-i validate[required]" />
                                                         <img src="./Img/captcha.png" />
                                                         <input type="image" title="Thay đổi mã số khác." class="reload"
                                                             src="./images/ic-reload.svg" />
