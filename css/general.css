@@ -12848,7 +12848,7 @@ hr.line-under-title-big {
 
 .footer-fixed {
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     background-color: #726475;
     color: #fff;
     text-align: center;
