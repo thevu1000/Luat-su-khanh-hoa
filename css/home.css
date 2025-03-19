@@ -1,0 +1,834 @@
+#mdl-home .consultation,
+#mdl-services .consultation,
+#mdl-lawyer .consultation,
+#mdl-video .consultation,
+#mdl-gallery .consultation {
+    margin-top: 100px
+}
+
+#mdl-home .consultation p,
+#mdl-services .consultation p,
+#mdl-lawyer .consultation p,
+#mdl-video .consultation p,
+#mdl-gallery .consultation p {
+    text-align: center
+}
+
+#mdl-home .consultation .form,
+#mdl-services .consultation .form,
+#mdl-lawyer .consultation .form,
+#mdl-video .consultation .form,
+#mdl-gallery .consultation .form {
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto 0
+}
+
+#mdl-home .consultation .form input,
+#mdl-home .consultation .form textarea,
+#mdl-services .consultation .form input,
+#mdl-services .consultation .form textarea,
+#mdl-lawyer .consultation .form input,
+#mdl-lawyer .consultation .form textarea,
+#mdl-video .consultation .form input,
+#mdl-video .consultation .form textarea,
+#mdl-gallery .consultation .form input,
+#mdl-gallery .consultation .form textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    background: #ebebeb;
+    outline: 0;
+    padding: 20px;
+    margin-bottom: 10px;
+    resize: none
+}
+
+#mdl-home .consultation .form .btn-send,
+#mdl-services .consultation .form .btn-send,
+#mdl-lawyer .consultation .form .btn-send,
+#mdl-video .consultation .form .btn-send,
+#mdl-gallery .consultation .form .btn-send {
+    display: table;
+    margin: 0 auto;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    color: #fff;
+    background: #d0b089;
+    transition: .2s
+}
+
+#mdl-home .consultation .form .btn-send:hover,
+#mdl-services .consultation .form .btn-send:hover,
+#mdl-lawyer .consultation .form .btn-send:hover,
+#mdl-video .consultation .form .btn-send:hover,
+#mdl-gallery .consultation .form .btn-send:hover {
+    background: #443846
+}
+
+#mdl-home .main-job,
+#mdl-about .main-job {
+    margin-top: 100px
+}
+
+#mdl-home .main-job:before,
+#mdl-home .main-job:after,
+#mdl-about .main-job:before,
+#mdl-about .main-job:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+#mdl-home .main-job .box-job,
+#mdl-about .main-job .box-job {
+    float: left;
+    width: 25%;
+    padding: 80px 15px;
+    background: #f7f7f7;
+    border-right: 1px solid #ebebeb
+}
+
+#mdl-home .main-job .box-job:last-child,
+#mdl-about .main-job .box-job:last-child {
+    border-right: 0
+}
+
+#mdl-home .main-job .box-job img,
+#mdl-about .main-job .box-job img {
+    height: 70px;
+    margin: 0 auto;
+    display: block
+}
+
+#mdl-home .main-job .box-job .title-main-job,
+#mdl-about .main-job .box-job .title-main-job {
+    font-size: 25px;
+    font-family: 'RobotoSlab-Regular';
+    text-align: center;
+    margin-top: 20px;
+    color: #443846
+}
+
+#mdl-home .main-job .box-job p,
+#mdl-about .main-job .box-job p {
+    text-align: center;
+    margin-top: 10px
+}
+
+#mdl-home .main-job .box-job .view-more,
+#mdl-about .main-job .box-job .view-more {
+    display: table;
+    text-align: center;
+    margin: 20px auto 0;
+    font-family: "RobotoCondensed-Bold";
+    color: #443846;
+    border-bottom: 2px solid #443846
+}
+
+#mdl-home .main-job .box-job .view-more:hover,
+#mdl-about .main-job .box-job .view-more:hover {
+    color: #d0b089;
+    border-bottom: 2px solid #d0b089
+}
+
+#mdl-home .victory,
+#mdl-about .victory {
+    background: url(../Img/slide-banner1.jpg) no-repeat center center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative
+}
+
+#mdl-home .victory .inner,
+#mdl-about .victory .inner {
+    position: relative;
+    z-index: 10
+}
+
+#mdl-home .victory .title-small,
+#mdl-about .victory .title-small {
+    color: #d0b089
+}
+
+#mdl-home .victory .title-big,
+#mdl-about .victory .title-big {
+    color: #fff
+}
+
+#mdl-home .victory:before,
+#mdl-about .victory:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 56, 70, 0.4);
+    z-index: 1;
+    top: 0;
+    left: 0
+}
+
+#mdl-home .victory .box-num,
+#mdl-about .victory .box-num {
+    text-align: center;
+    padding-top: 20px
+}
+
+#mdl-home .victory .box-num span,
+#mdl-about .victory .box-num span {
+    display: block
+}
+
+#mdl-home .victory .box-num .num,
+#mdl-about .victory .box-num .num {
+    font-size: 70px;
+    font-family: 'RobotoSlab-Regular';
+    color: #d0b089
+}
+
+#mdl-home .victory .box-num .name,
+#mdl-about .victory .box-num .name {
+    font-size: 20px;
+    color: #fff
+}
+
+#mdl-home .personnels,
+#mdl-about .personnels {
+    margin-top: 100px
+}
+
+#mdl-home .personnels h6.person,
+#mdl-about .personnels h6.person {
+    text-align: center;
+    margin-top: 20px
+}
+
+#mdl-home .personnels h6.person span,
+#mdl-about .personnels h6.person span {
+    display: block
+}
+
+#mdl-home .personnels h6.person .name,
+#mdl-about .personnels h6.person .name {
+    display: block;
+    font-size: 22px;
+    font-family: 'RobotoSlab-Regular';
+    color: #443846;
+    text-transform: uppercase;
+    transition: .2s
+}
+
+#mdl-home .personnels h6.person .name:hover,
+#mdl-about .personnels h6.person .name:hover {
+    color: #d0b089
+}
+
+#mdl-home .personnels h6.person .job,
+#mdl-about .personnels h6.person .job {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #d0b089
+}
+
+#mdl-home .personnels .text-intro,
+#mdl-about .personnels .text-intro {
+    text-align: center
+}
+
+#mdl-home .personnels .item,
+#mdl-about .personnels .item {
+    padding: 0 10px;
+    outline: 0
+}
+
+#mdl-home .personnels .item:hover h6.person .name,
+#mdl-about .personnels .item:hover h6.person .name {
+    color: #d0b089
+}
+
+#mdl-home .personnels .img,
+#mdl-about .personnels .img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+#mdl-home .personnels .contact-this,
+#mdl-about .personnels .contact-this {
+    text-align: center
+}
+
+#mdl-home .personnels .contact-this a,
+#mdl-about .personnels .contact-this a {
+    width: 30px;
+    height: 30px;
+    padding: 5px 7px;
+    display: block;
+    color: #fff;
+    border-radius: 100%;
+    transition: .2s
+}
+
+#mdl-home .personnels .contact-this a.ic-facebook,
+#mdl-about .personnels .contact-this a.ic-facebook {
+    background: #3b5998
+}
+
+#mdl-home .personnels .contact-this a.ic-skype,
+#mdl-about .personnels .contact-this a.ic-skype {
+    background: #00aff0
+}
+
+#mdl-home .personnels .contact-this a.ic-pinterest,
+#mdl-about .personnels .contact-this a.ic-pinterest {
+    background: #bd081b
+}
+
+#mdl-home .personnels .contact-this a:hover,
+#mdl-about .personnels .contact-this a:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+#mdl-home .personnels .contact-this i,
+#mdl-about .personnels .contact-this i {
+    font-size: 16px
+}
+
+#mdl-home .banner:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10
+}
+
+#mdl-home .banner .slide-banner,
+#mdl-home .banner .slick-list,
+#mdl-home .banner .slick-track,
+#mdl-home .banner .wrap-img,
+#mdl-home .banner .img {
+    height: 100%
+}
+
+#mdl-home .banner .slide-banner {
+    position: relative
+}
+
+#mdl-home .banner .slide-banner:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    opacity: .1;
+    z-index: 100
+}
+
+#mdl-home .banner .wrap-img {
+    outline: 0
+}
+
+#mdl-home .banner .text-banner {
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    max-width: 590px;
+    width: 100%
+}
+
+#mdl-home .banner .text-banner .title {
+    font-family: 'RobotoSlab-Regular';
+    font-size: 50px;
+    color: #fff
+}
+
+#mdl-home .banner .text-banner p {
+    margin-top: 30px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #eee
+}
+
+#mdl-home .banner .text-banner .btn-question {
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 15px 60px;
+    font-family: "RobotoCondensed-Bold";
+    border: 1px solid #c1c1c1;
+    display: block;
+    width: 40%;
+    text-align: center;
+    color: #eee;
+    margin-top: 20px;
+    transition: .2s
+}
+
+#mdl-home .banner .text-banner .btn-question:hover {
+    background: #443846;
+    color: #fff
+}
+
+#mdl-home .banner .img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+#mdl-home .box-intro-broad {
+    text-align: center;
+    margin-top: 50px
+}
+
+#mdl-home .box-intro-broad .inner {
+    width: 80%;
+    margin: 0 auto
+}
+
+#mdl-home .services {
+    margin-top: 100px
+}
+
+#mdl-home .services .slide-services {
+    margin-top: 40px
+}
+
+#mdl-home .services .slide-services .item {
+    padding: 0 5px
+}
+
+#mdl-home .services .slide-services .name-service {
+    font-size: 18px;
+    font-family: 'RobotoSlab-Regular';
+    text-align: center;
+    color: #443846
+}
+
+#mdl-home .services .slide-services .inner {
+    display: block;
+    width: 100%
+}
+
+#mdl-home .services .slide-services .inner:hover .img {
+    border: 2px solid #d0b089
+}
+
+#mdl-home .services .slide-services .inner:hover .name-service {
+    color: #d0b089
+}
+
+#mdl-home .services .slide-services .img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #443846;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+#mdl-home .wrap-info {
+    margin: 100px
+}
+
+#mdl-home .wrap-info .title-small,
+#mdl-home .wrap-info .title-big {
+    text-align: center;
+    display: block
+}
+
+#mdl-home .wrap-info hr {
+    height: 2px;
+    background: #443846;
+    width: 70px;
+    margin-left: 0
+}
+
+#mdl-home .wrap-info .box:before,
+#mdl-home .wrap-info .box:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+#mdl-home .wrap-info .box .wrap-img,
+#mdl-home .wrap-info .box .wrap-text {
+    width: 50%
+}
+
+#mdl-home .wrap-info .box .wrap-text {
+    padding: 0 14px;
+    width: 65%
+}
+
+#mdl-home .wrap-info .box .wrap-text .title {
+    font-size: 28px;
+    margin: 0;
+    font-family: 'RobotoSlab-Regular';
+    color: #443846
+}
+
+#mdl-home .wrap-info .box .wrap-text .btn-view-more {
+    font-family: "RobotoCondensed-Bold";
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 15px 30px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #443846;
+    text-transform: uppercase;
+    transition: .2s
+}
+
+#mdl-home .wrap-info .box .wrap-text .btn-view-more:hover {
+    background: #443846;
+    color: #fff
+}
+
+#mdl-home .wrap-info .box.box-even {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+#mdl-home .wrap-info .box.box-even .wrap-img {
+    float: left
+}
+
+#mdl-home .wrap-info .box .wrap-img {
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+    width: 35%
+}
+
+#mdl-home .wrap-info .box .wrap-img img {
+    margin: auto;
+    max-height: 300px;
+    min-height: 300px;
+    max-width: 450px;
+    object-fit: cover
+}
+
+#mdl-home .wrap-info .box.box-even .wrap-text {
+    float: right
+}
+
+#mdl-home .wrap-info .box.box-odd .wrap-img {
+    float: right
+}
+
+#mdl-home .wrap-info .box.box-odd .wrap-text {
+    float: left
+}
+
+#mdl-home .client-say {
+    margin-top: 100px;
+    padding: 0 50px
+}
+
+#mdl-home .client-say:before,
+#mdl-home .client-say:after {
+    content: '';
+    clear: both;
+    display: table
+}
+
+#mdl-home .client-say .justice {
+    float: left;
+    width: 40%
+}
+
+#mdl-home .client-say .wrap-clients {
+    margin-top: 80px;
+    float: right;
+    width: 55%;
+    padding-left: 80px;
+    background: url(../Img/ic-quote.png) no-repeat left 175px
+}
+
+#mdl-home .client-say .wrap-clients .item {
+    outline: 0
+}
+
+#mdl-home .client-say .wrap-clients .client .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+#mdl-home .client-say .wrap-clients .client .info-client .name {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #d0b089
+}
+
+#mdl-home .client-say .wrap-clients .say {
+    position: relative;
+    margin-top: 30px
+}
+
+#mdl-home .client-say .wrap-clients .say .fa {
+    position: absolute;
+    font-size: 40px;
+    color: #ccc
+}
+
+#mdl-home .client-say .wrap-clients .say .fa-quote-left {
+    left: 0;
+    top: 0
+}
+
+#mdl-home .client-say .wrap-clients .say .fa-quote-right {
+    right: 0;
+    bottom: 0
+}
+
+#mdl-home .client-say .wrap-clients .say p {
+    font-size: 30px;
+    font-family: "ArimaMadurai-Regular";
+    font-style: italic;
+    margin-bottom: 0;
+    color: #443846
+}
+
+@media only screen and (max-width:1024px) {
+
+    .main-job,
+    .services,
+    .wrap-info,
+    .client-say,
+    .victory,
+    .personnels,
+    .consultation {
+        margin-top: 60px
+    }
+
+    #mdl-home .main-job .box-job,
+    #mdl-about .main-job .box-job {
+        padding: 50px 15px
+    }
+
+    #mdl-home .main-job .box-job img,
+    #mdl-about .main-job .box-job img {
+        height: 50px
+    }
+
+    #mdl-home .main-job .box-job .title-main-job,
+    #mdl-about .main-job .box-job .title-main-job {
+        font-size: 22px
+    }
+
+    #mdl-home .victory,
+    #mdl-about .victory {
+        padding: 50px 0
+    }
+
+    #mdl-home .victory .box-num,
+    #mdl-about .victory .box-num {
+        padding-top: 0
+    }
+
+    #mdl-home .victory .box-num .num,
+    #mdl-about .victory .box-num .num {
+        font-size: 50px
+    }
+
+    #mdl-home .personnels .img,
+    #mdl-about .personnels .img {
+        height: 300px
+    }
+
+    #mdl-home .personnels h6.person,
+    #mdl-about .personnels h6.person {
+        margin-top: 10px
+    }
+
+    #mdl-home .personnels h6.person .name,
+    #mdl-about .personnels h6.person .name {
+        font-size: 20px
+    }
+
+    #mdl-home .banner .text-banner .title,
+    #mdl-about .banner .text-banner .title {
+        font-size: 45px
+    }
+
+    #mdl-home .banner .text-banner p,
+    #mdl-about .banner .text-banner p {
+        margin-top: 15px
+    }
+
+    #mdl-home .banner .text-banner .btn-question,
+    #mdl-about .banner .text-banner .btn-question {
+        max-width: 200px;
+        width: 100%;
+        padding: 10px
+    }
+
+    #mdl-home .wrap-info .box .wrap-text,
+    #mdl-about .wrap-info .box .wrap-text {
+        padding: 5px 20px 20px
+    }
+
+    #mdl-home .wrap-info .box .wrap-text .btn-view-more,
+    #mdl-about .wrap-info .box .wrap-text .btn-view-more {
+        padding: 10px;
+        width: 40%
+    }
+
+    #mdl-home .client-say .justice img,
+    #mdl-about .client-say .justice img {
+        width: 260px
+    }
+
+    #mdl-home .client-say .wrap-clients,
+    #mdl-about .client-say .wrap-clients {
+        margin-top: 15px;
+        padding-left: 60px;
+        background-size: 40px;
+        background-position: left 145px
+    }
+
+    #mdl-home .client-say .wrap-clients .say,
+    #mdl-about .client-say .wrap-clients .say {
+        margin-top: 15px
+    }
+
+    #mdl-home .client-say .wrap-clients .say p,
+    #mdl-about .client-say .wrap-clients .say p {
+        font-size: 22px
+    }
+
+    #mdl-home .client-say .wrap-clients .client .img,
+    #mdl-about .client-say .wrap-clients .client .img {
+        width: 80px;
+        height: 80px
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .main-job,
+    .services,
+    .wrap-info,
+    .client-say,
+    .victory,
+    .personnels,
+    .consultation {
+        margin-top: 40px
+    }
+
+    #mdl-home .consultation,
+    #mdl-services .consultation,
+    #mdl-lawyer .consultation,
+    #mdl-video .consultation,
+    #mdl-gallery .consultation {
+        padding: 0 15px;
+        margin-top: 30px
+    }
+
+    #mdl-home .main-job .box-job,
+    #mdl-about .main-job .box-job {
+        width: 50%
+    }
+
+    #mdl-home .main-job .box-job:nth-child(1),
+    #mdl-home .main-job .box-job:nth-child(2),
+    #mdl-about .main-job .box-job:nth-child(1),
+    #mdl-about .main-job .box-job:nth-child(2) {
+        border-bottom: 1px solid #ebebeb
+    }
+
+    #mdl-home .victory,
+    #mdl-about .victory {
+        padding: 30px 15px
+    }
+
+    #mdl-home .victory .box-num .num,
+    #mdl-about .victory .box-num .num {
+        font-size: 35px
+    }
+
+    #mdl-home .victory .box-num .name,
+    #mdl-about .victory .box-num .name {
+        font-size: 15px
+    }
+
+    #mdl-home .banner .text-banner {
+        max-width: 100%;
+        padding: 0 15px;
+        left: auto
+    }
+
+    #mdl-home .banner .text-banner .title {
+        font-size: 30px
+    }
+
+    #mdl-home .wrap-info .box .wrap-text .btn-view-more {
+        width: 100%
+    }
+
+    #mdl-home .client-say {
+        padding: 0 20px
+    }
+
+    #mdl-home .client-say .justice {
+        float: none;
+        width: 100%
+    }
+
+    #mdl-home .client-say .justice img {
+        margin: 0 auto;
+        width: auto
+    }
+
+    #mdl-home .client-say .wrap-clients {
+        width: 100%;
+        float: none
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    #mdl-home .wrap-info .box .wrap-img,
+    #mdl-home .wrap-info .box .wrap-text,
+    #mdl-about .wrap-info .box .wrap-img,
+    #mdl-about .wrap-info .box .wrap-text {
+        width: 100%
+    }
+}
+
+.say p {
+    line-height: 30px
+}
+
+.consultation .summary {
+    text-align: center
+}
+
+.text-banner .group-btn {
+    display: flex
+}
+
+.text-banner .group-btn .btn-question:last-child {
+    margin-left: 10px
+}

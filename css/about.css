@@ -1,0 +1,64 @@
+#mdl-about .introduction {
+    margin-top: 80px;
+    padding: 0 15px
+}
+
+#mdl-about .introduction:before,
+#mdl-about .introduction:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+#mdl-about .introduction .justice {
+    float: left;
+    width: 45%;
+    padding-right: 15px
+}
+
+#mdl-about .introduction .box-text {
+    float: right;
+    width: 55%;
+    margin-top: 55px;
+    padding-left: 15px
+}
+
+#mdl-about .introduction .box-text .title-small,
+#mdl-about .introduction .box-text .title-big {
+    text-align: left
+}
+
+#mdl-about .introduction .box-text .title-big {
+    margin-bottom: 30px
+}
+
+#mdl-about .main-job {
+    margin-top: 0
+}
+
+#mdl-about .victory {
+    margin-top: 80px
+}
+
+@media only screen and (max-width:1024px) {
+
+    #mdl-about .introduction,
+    #mdl-about .victory {
+        margin-top: 60px
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #mdl-about .introduction .justice {
+        width: 100%;
+        float: none
+    }
+
+    #mdl-about .introduction .justice img {
+        margin: 0 auto
+    }
+
+    #mdl-about .introduction .box-text {
+        width: 100%
+    }
+}

@@ -1,0 +1,230 @@
+#mdl-service-detail .wrap-service-detail,
+#mdl-service-detail .wrap-faq,
+#mdl-service-detail .wrap-video,
+#mdl-service-detail .wrap-gallery,
+#mdl-service-detail .wrap-list-video,
+#mdl-news .wrap-service-detail,
+#mdl-news .wrap-faq,
+#mdl-news .wrap-video,
+#mdl-news .wrap-gallery,
+#mdl-news .wrap-list-video,
+#mdl-faq .wrap-service-detail,
+#mdl-faq .wrap-faq,
+#mdl-faq .wrap-video,
+#mdl-faq .wrap-gallery,
+#mdl-faq .wrap-list-video,
+#mdl-video .wrap-service-detail,
+#mdl-video .wrap-faq,
+#mdl-video .wrap-video,
+#mdl-video .wrap-gallery,
+#mdl-video .wrap-list-video,
+#mdl-gallery .wrap-service-detail,
+#mdl-gallery .wrap-faq,
+#mdl-gallery .wrap-video,
+#mdl-gallery .wrap-gallery,
+#mdl-gallery .wrap-list-video {
+    margin-top: 50px
+}
+
+#mdl-service-detail .wrap-service-detail .info-post,
+#mdl-service-detail .wrap-faq .info-post,
+#mdl-service-detail .wrap-video .info-post,
+#mdl-service-detail .wrap-gallery .info-post,
+#mdl-service-detail .wrap-list-video .info-post,
+#mdl-news .wrap-service-detail .info-post,
+#mdl-news .wrap-faq .info-post,
+#mdl-news .wrap-video .info-post,
+#mdl-news .wrap-gallery .info-post,
+#mdl-news .wrap-list-video .info-post,
+#mdl-faq .wrap-service-detail .info-post,
+#mdl-faq .wrap-faq .info-post,
+#mdl-faq .wrap-video .info-post,
+#mdl-faq .wrap-gallery .info-post,
+#mdl-faq .wrap-list-video .info-post,
+#mdl-video .wrap-service-detail .info-post,
+#mdl-video .wrap-faq .info-post,
+#mdl-video .wrap-video .info-post,
+#mdl-video .wrap-gallery .info-post,
+#mdl-video .wrap-list-video .info-post,
+#mdl-gallery .wrap-service-detail .info-post,
+#mdl-gallery .wrap-faq .info-post,
+#mdl-gallery .wrap-video .info-post,
+#mdl-gallery .wrap-gallery .info-post,
+#mdl-gallery .wrap-list-video .info-post {
+    margin: 30px 0 10px
+}
+
+#mdl-service-detail .wrap-service-detail .img-post,
+#mdl-service-detail .wrap-faq .img-post,
+#mdl-service-detail .wrap-video .img-post,
+#mdl-service-detail .wrap-gallery .img-post,
+#mdl-service-detail .wrap-list-video .img-post,
+#mdl-news .wrap-service-detail .img-post,
+#mdl-news .wrap-faq .img-post,
+#mdl-news .wrap-video .img-post,
+#mdl-news .wrap-gallery .img-post,
+#mdl-news .wrap-list-video .img-post,
+#mdl-faq .wrap-service-detail .img-post,
+#mdl-faq .wrap-faq .img-post,
+#mdl-faq .wrap-video .img-post,
+#mdl-faq .wrap-gallery .img-post,
+#mdl-faq .wrap-list-video .img-post,
+#mdl-video .wrap-service-detail .img-post,
+#mdl-video .wrap-faq .img-post,
+#mdl-video .wrap-video .img-post,
+#mdl-video .wrap-gallery .img-post,
+#mdl-video .wrap-list-video .img-post,
+#mdl-gallery .wrap-service-detail .img-post,
+#mdl-gallery .wrap-faq .img-post,
+#mdl-gallery .wrap-video .img-post,
+#mdl-gallery .wrap-gallery .img-post,
+#mdl-gallery .wrap-list-video .img-post {
+    margin: 20px auto
+}
+
+#mdl-service-detail .wrap-content p,
+#mdl-news .wrap-content p,
+#mdl-faq .wrap-content p,
+#mdl-video .wrap-content p,
+#mdl-gallery .wrap-content p {
+    text-align: justify
+}
+
+#mdl-service-detail .title-service,
+#mdl-service-detail .title-services-diff,
+#mdl-news .title-service,
+#mdl-news .title-services-diff,
+#mdl-faq .title-service,
+#mdl-faq .title-services-diff,
+#mdl-video .title-service,
+#mdl-video .title-services-diff,
+#mdl-gallery .title-service,
+#mdl-gallery .title-services-diff {
+    font-size: 30px;
+    font-family: "RobotoSlab-Regular";
+    color: #443846
+}
+
+#mdl-service-detail .title-service a,
+#mdl-service-detail .title-services-diff a,
+#mdl-news .title-service a,
+#mdl-news .title-services-diff a,
+#mdl-faq .title-service a,
+#mdl-faq .title-services-diff a,
+#mdl-video .title-service a,
+#mdl-video .title-services-diff a,
+#mdl-gallery .title-service a,
+#mdl-gallery .title-services-diff a {
+    color: #443846
+}
+
+#mdl-service-detail .title-service a:hover,
+#mdl-service-detail .title-services-diff a:hover,
+#mdl-news .title-service a:hover,
+#mdl-news .title-services-diff a:hover,
+#mdl-faq .title-service a:hover,
+#mdl-faq .title-services-diff a:hover,
+#mdl-video .title-service a:hover,
+#mdl-video .title-services-diff a:hover,
+#mdl-gallery .title-service a:hover,
+#mdl-gallery .title-services-diff a:hover {
+    color: #d0b089
+}
+
+#mdl-service-detail .slide-service-diff .box,
+#mdl-news .slide-service-diff .box,
+#mdl-faq .slide-service-diff .box,
+#mdl-video .slide-service-diff .box,
+#mdl-gallery .slide-service-diff .box {
+    display: block;
+    margin-bottom: 30px
+}
+
+#mdl-service-detail .slide-service-diff .box:hover .name-serve-diff,
+#mdl-news .slide-service-diff .box:hover .name-serve-diff,
+#mdl-faq .slide-service-diff .box:hover .name-serve-diff,
+#mdl-video .slide-service-diff .box:hover .name-serve-diff,
+#mdl-gallery .slide-service-diff .box:hover .name-serve-diff {
+    color: #d0b089
+}
+
+#mdl-service-detail .slide-service-diff .img,
+#mdl-news .slide-service-diff .img,
+#mdl-faq .slide-service-diff .img,
+#mdl-video .slide-service-diff .img,
+#mdl-gallery .slide-service-diff .img {
+    height: 185px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+#mdl-service-detail .slide-service-diff .name-serve-diff,
+#mdl-news .slide-service-diff .name-serve-diff,
+#mdl-faq .slide-service-diff .name-serve-diff,
+#mdl-video .slide-service-diff .name-serve-diff,
+#mdl-gallery .slide-service-diff .name-serve-diff {
+    font-size: 18px;
+    color: #443846;
+    transition: .3s
+}
+
+#mdl-news .box-news a {
+    display: block
+}
+
+#mdl-news .box-news:hover .title-service a {
+    color: #d0b089
+}
+
+#mdl-news .box-news .btn-view-more {
+    color: #443846;
+    font-family: "RobotoCondensed-Bold"
+}
+
+#mdl-news .box-news .btn-view-more:hover {
+    color: #d0b089
+}
+
+@media only screen and (max-width:767px) {
+
+    #mdl-service-detail .wrap-service-detail,
+    #mdl-service-detail .wrap-video,
+    #mdl-service-detail .wrap-gallery,
+    #mdl-service-detail .wrap-list-video,
+    #mdl-news .wrap-service-detail,
+    #mdl-news .wrap-video,
+    #mdl-news .wrap-gallery,
+    #mdl-news .wrap-list-video,
+    #mdl-faq .wrap-service-detail,
+    #mdl-faq .wrap-video,
+    #mdl-faq .wrap-gallery,
+    #mdl-faq .wrap-list-video,
+    #mdl-video.video-detail .wrap-service-detail,
+    #mdl-video.video-detail .wrap-video,
+    #mdl-video.video-detail .wrap-gallery,
+    #mdl-video.video-detail .wrap-list-video,
+    #mdl-gallery .wrap-service-detail,
+    #mdl-gallery .wrap-video,
+    #mdl-gallery .wrap-gallery,
+    #mdl-gallery .wrap-list-video {
+        margin-top: 20px
+    }
+
+    #mdl-service-detail .slide-service-diff,
+    #mdl-news .slide-service-diff,
+    #mdl-faq .slide-service-diff,
+    #mdl-video.video-detail .slide-service-diff,
+    #mdl-gallery .slide-service-diff {
+        margin: 15px -10px
+    }
+
+    #mdl-service-detail .slide-service-diff .box,
+    #mdl-news .slide-service-diff .box,
+    #mdl-faq .slide-service-diff .box,
+    #mdl-video.video-detail .slide-service-diff .box,
+    #mdl-gallery .slide-service-diff .box {
+        display: block;
+        margin: 0 10px
+    }
+}

@@ -1,0 +1,140 @@
+.sectionTitleWrap {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+        font-weight: 600;
+        padding-bottom: 15px;
+        position: relative;
+        margin-top: 0;
+        font-size: 36px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2.5px;
+            background-color: #d0b089;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 30px;
+        }
+    }
+}
+
+.consultation {}
+
+.wrap-services {
+    .categoryListWrap {
+        .row {
+            row-gap: 20px;
+            display: flex;
+            justify-content: center;
+
+            >div {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .categoryItem {
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        cursor: pointer;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid #eaeaea;
+
+        transition: all .1s;
+
+        .imgWrap {
+            overflow: hidden;
+        }
+
+        .zoomWrap {
+            transition: all .1s;
+        }
+
+        &:hover {
+            box-shadow: 0px 16px 42px 0px #1F1F330F;
+
+            .imgWrap {
+                .zoomWrap {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .contentWrap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .title {
+            h3 {
+                font-weight: 500;
+                font-size: 24px;
+                margin: 0;
+                font-family: ''RobotoSlab-Regular'Slab-Regular';
+                color: #d0b089;
+            }
+        }
+
+        .desc {
+            p {
+                font-size: 16px;
+                color: #88756e;
+                margin: 0;
+                line-height: 24px;
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background-color: transparent;
+            border: 1px solid #d0b089 !important;
+            border-radius: 999px;
+            width: fit-content;
+            transition: all .1s;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-top: auto;
+
+            p {
+                transition: all .1s;
+                margin: 0;
+                color: #d0b089;
+            }
+
+            svg {
+                height: 15px;
+                transition: all .1s;
+                color: #d0b089;
+            }
+
+            &:hover {
+                background-color: #443846 !important;
+                background-color: transparent;
+
+                p {
+                    color: #fff;
+                }
+
+                svg {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+

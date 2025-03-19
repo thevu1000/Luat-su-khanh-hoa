@@ -1,0 +1,304 @@
+html {
+    overflow-x: visible;
+}
+
+body {
+    overflow-x: visible;
+}
+
+.blogMainContent {
+    
+    @media screen and (min-width: 1024px) {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+    }
+    .mainBlogTitle {
+        font-size: 32px;
+        color: #3c2e44;
+        margin: 0;
+        margin-bottom: 15px;
+        line-height: 1.3;
+        font-family: 'RobotoSlab-Bold';
+    }
+
+    .imgWrap {
+        border-radius: 8px;
+        margin-bottom: 25px;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 30px;
+
+        .wrapImgResize {
+            height: 100%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .indexWrap {
+        background: #f5f5f5;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    color: #666;
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px 0;
+                    border-bottom: 1px dotted #ddd;
+                    transition: all 0.3s ease;
+                    font-size: 16px;
+                    font-family: 'RobotoSlab-Regular';
+
+                    &:hover {
+                        color: #3c2e44;
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #3c2e44;
+            font-family: 'RobotoSlab-Bold';
+
+        }
+    }
+
+    .blogContent {
+        h2 {
+            font-size: 25px;
+            color: #3c2e44;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            font-family: 'RobotoSlab-Bold';
+
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #3c2e44;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            font-family: 'RobotoSlab-Bold';
+        }
+
+        p {
+            color: #111111;
+        }
+
+        ul {
+            li {
+                color: #111111;
+
+            }
+        }
+    }
+
+    .contactBtn {
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        a {
+            padding: 15px;
+            background-color: #3c2e44;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #ffff;
+            font-family: 'RobotoSlab-Bold';
+
+            svg {
+                height: 15px;
+            }
+
+            &:hover {
+                svg {
+                    animation: hithere 1s ease infinite;
+                }
+            }
+        }
+    }
+
+    .socialShare {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+        }
+
+        .socialWrap {
+            display: flex;
+            gap: 8px;
+
+            .socialItem {
+                svg {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .socialShare {
+        margin-top: 20px;
+
+        p {
+            color: #111111;
+        }
+
+        .socialItem {
+            a {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                svg {
+                    color: #3c2e44;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 8px;
+    position: sticky;
+
+    .relatedArticles {
+        h3 {
+            font-size: 20px;
+            color: #3c2e44;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            font-family: 'RobotoSlab-Bold';
+        }
+    }
+
+    .relatedArticle {
+        display: flex;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #f0f0f0;
+
+        img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            h4 {
+                color: #3c2e44;
+            }
+        }
+
+        h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-top: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: #444;
+            text-decoration: none;
+            line-height: 18px;
+            transition: color 0.3s ease;
+            font-family: 'RobotoSlab-Regular';
+        }
+
+        .date {
+            font-size: 12px;
+            color: #888;
+        }
+    }
+}
+
+.contact-now {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+
+    padding: 15px;
+    background-color: #3c2e44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffff;
+    font-family: 'RobotoSlab-Bold';
+    &:hover {
+        color: #ffff;
+    }
+    svg {
+        height: 15px;
+    }
+
+    &:hover {
+        svg {
+            animation: hithere 1s ease infinite;
+        }
+    }
+}
+
+.wrap-service-detail {
+    .col-12 {
+        &.col-lg-3 {
+            .sidebar {
+                @media screen and (min-width: 992px) {
+                    position: sticky;
+                    top: 10%;
+                }
+            }
+        }
+    }
+}
+
+@keyframes hithere {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
