@@ -169,6 +169,7 @@
                 .calendarIcon {
                     display: flex;
                     align-items: center;
+                    margin-left: 8px;
                 }
                 svg {
                     height: 20px;
@@ -182,7 +183,6 @@
                     min-width: 190px;
                     width: 100%;
                     padding: 0 18px;
-                    padding-right: 0;
                     @media screen and (max-width: 991px) {
                         min-width: 0;
 
