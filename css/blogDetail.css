@@ -323,6 +323,12 @@ body {
             }
         }
     }
+
+    >.containerCustom1 {
+        >.row {
+            row-gap: 15px;
+        }
+    }
 }
 
 .socialItem {
