@@ -18,4 +18,30 @@ $(document).ready(function () {
         const mailtoUrl = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
         window.location.href = mailtoUrl;
     });
+
+    $('.indexList .indexItemLink').on('click', function (event) {
+        event.preventDefault();
+
+        
+        var targetText = $(this).text().trim();
+        console.log(targetText);
+        
+        var keyword = targetText.split(/[:\-]/)[0].trim();
+        console.log(keyword);
+        
+        var targetElement = $('.blogContent *').filter(function () {
+            return $(this).text().toLowerCase().includes(keyword.toLowerCase());
+        }).first();
+        console.log(targetElement);
+        
+        if (targetElement.length) {
+            $('html, body').animate({
+                scrollTop: targetElement.offset().top - 80
+            }, 800);
+        } else {
+            console.warn("Không tìm thấy phần tử phù hợp cho từ khóa:", keyword);
+        }
+    });
+    
+    
 });
