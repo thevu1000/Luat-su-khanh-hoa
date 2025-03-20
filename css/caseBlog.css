@@ -31,6 +31,8 @@
             height: 40px;
             padding: 12px 0;
             margin-left: 5px;
+            font-family: 'RobotoCondensed-Regular';
+            font-size: 14px;
         }
     }
 
@@ -137,11 +139,13 @@
                 width: 100% !important;
                 background-color: #ffff;
                 border: 1px solid #d2dae2;
-                white-space: nowrap;
-                overflow: hidden;
+                span {
+                    white-space: nowrap;
                 text-overflow: ellipsis;
-                color: #9e9e9e;
-
+                width: 100%!important;
+                overflow: hidden;
+                display: block;
+                }
             }
 
             .list {
@@ -199,7 +203,9 @@
                     text-overflow: ellipsis;
                     font-family: 'RobotoCondensed-Regular';
                     font-size: 14px;
-
+                    &::placeholder {
+                        color: #9e9e9e!important;
+                    }
                     @media screen and (max-width: 991px) {
                         min-width: 0;
 
