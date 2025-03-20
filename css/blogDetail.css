@@ -110,33 +110,7 @@ body {
         }
     }
 
-    .contactBtn {
-        width: 100%;
-        text-align: center;
-        border-radius: 10px;
-        overflow: hidden;
-
-        a {
-            padding: 15px;
-            background-color: #3c2e44;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            color: #ffff;
-            font-family: 'RobotoSlab-Bold';
-
-            svg {
-                height: 15px;
-            }
-
-            &:hover {
-                svg {
-                    animation: hithere 1s ease infinite;
-                }
-            }
-        }
-    }
+    
 
     .socialShare {
         display: flex;
@@ -186,6 +160,34 @@ body {
     padding-top: 10px;
     border-radius: 8px;
     position: sticky;
+
+    .contactBtn {
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        a {
+            padding: 15px;
+            background-color: #3c2e44;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #ffff;
+            font-family: 'RobotoSlab-Bold';
+
+            svg {
+                height: 15px;
+            }
+
+            &:hover {
+                svg {
+                    animation: hithere 1s ease infinite;
+                }
+            }
+        }
+    }
 
     .relatedArticles {
         h3 {

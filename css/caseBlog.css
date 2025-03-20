@@ -166,8 +166,8 @@
                 border: 1px solid #d2dae2;
                 align-items: center;
                 border-radius: 8px;
-
                 padding-right: 18px;
+                overflow: hidden;
 
                 .calendarIcon {
                     display: flex;
@@ -188,7 +188,7 @@
                     min-width: 190px;
                     width: 100%;
                     padding: 0 18px;
-
+                    padding-right: 0;
                     @media screen and (max-width: 991px) {
                         min-width: 0;
 
