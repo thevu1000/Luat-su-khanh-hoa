@@ -12846,6 +12846,16 @@ hr.line-under-title-big {
     display: none;
 }
 
+.fb-page {
+    width: 100%;
+    span {
+        width: 100%!important;
+    }
+    iframe {
+        width: 100%!important;
+    }
+}
+
 .footer-fixed {
     width: 100%;
     z-index: 1000;
