@@ -170,7 +170,7 @@ body {
         
         @media screen and (max-width: 845px) {
             position: fixed;
-            bottom: 80px;
+            bottom: 100px;
             right: 5px;
             width: fit-content;
 
