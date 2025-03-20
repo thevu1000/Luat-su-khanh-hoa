@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const currentUrl = encodeURIComponent('https://honsoi.vn/');
+    const currentUrl = encodeURIComponent('https://demo.sweetsoft.vn/luatsunhatrang/update/chi-tiet-bai-viet.html');
     const postTitle = encodeURIComponent(document.title);
 
     $('.facebook-share').on('click', function () {
