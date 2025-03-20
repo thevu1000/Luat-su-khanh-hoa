@@ -137,6 +137,11 @@
                 width: 100% !important;
                 background-color: #ffff;
                 border: 1px solid #d2dae2;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #9e9e9e;
+
             }
 
             .list {
@@ -189,6 +194,12 @@
                     width: 100%;
                     padding: 0 18px;
                     padding-right: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: 'RobotoCondensed-Regular';
+                    font-size: 14px;
+
                     @media screen and (max-width: 991px) {
                         min-width: 0;
 

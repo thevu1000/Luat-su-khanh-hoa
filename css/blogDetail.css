@@ -6,6 +6,70 @@ body {
     overflow-x: visible;
 }
 
+.contactBtn {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+
+    ::after {
+        transition: all 0.3s ease;
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 10px;
+
+        height: 100%;
+        opacity: 0.6;
+        z-index: -1;
+        -webkit-animation: ripple 1.5s infinite linear;
+        animation: ripple 1.5s infinite linear;
+    }
+
+    @media screen and (max-width: 845px) {
+        position: fixed;
+        bottom: 100px;
+        right: 5px;
+        width: fit-content;
+
+        svg {
+            animation: hithere 1s ease infinite;
+        }
+
+
+
+
+    }
+
+
+    a {
+        padding: 15px;
+        background-color: #3c2e44;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffff;
+        font-family: 'RobotoSlab-Bold';
+        border-radius: 10px;
+
+        svg {
+            height: 15px;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            svg {
+                animation: hithere 1s ease infinite;
+            }
+        }
+
+
+    }
+}
+
 .blogMainContent {
 
     @media screen and (min-width: 1024px) {
@@ -156,74 +220,12 @@ body {
 }
 
 .sidebar {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-    padding-top: 10px;
-    border-radius: 8px;
-    position: sticky;
-
-    .contactBtn {
-        width: 100%;
-        text-align: center;
-        border-radius: 10px;
-
-        
-        @media screen and (max-width: 845px) {
-            position: fixed;
-            bottom: 100px;
-            right: 5px;
-            width: fit-content;
-
-            svg {
-                animation: hithere 1s ease infinite;
-            }
-
-
-            ::after {
-                transition: all 0.3s ease;
-                content: " ";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                border-radius: 10px;
-
-                height: 100%;
-                opacity: 0.6;
-                z-index: -1;
-                -webkit-animation: ripple 1.5s infinite linear;
-                animation: ripple 1.5s infinite linear;
-            }
-            
-        }
-
-
-        a {
-            padding: 15px;
-            background-color: #3c2e44;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffff;
-            font-family: 'RobotoSlab-Bold';
-            border-radius: 10px;
-
-            svg {
-                height: 15px;
-                margin-right: 10px;
-            }
-
-            &:hover {
-                svg {
-                    animation: hithere 1s ease infinite;
-                }
-            }
-
-            
-        }
-    }
-
     .relatedArticles {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        padding-top: 10px;
+        border-radius: 8px;
+
         h3 {
             font-size: 20px;
             color: #3c2e44;
@@ -311,7 +313,7 @@ body {
             .sidebar {
                 @media screen and (min-width: 992px) {
                     position: sticky;
-                    top: 10%;
+                    top: 12%;
                 }
             }
         }
