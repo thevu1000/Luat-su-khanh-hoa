@@ -189,11 +189,16 @@ body {
         .socialWrap {
             display: flex;
             gap: 8px;
+            align-items: center;
 
             .socialItem {
+                display: flex;
+
                 svg {
                     height: 40px;
                 }
+
+
             }
         }
     }
@@ -317,6 +322,48 @@ body {
                 }
             }
         }
+    }
+}
+
+.socialItem {
+    .mail-share {
+        background-color: #d3c100;
+
+
+        border-radius: 2px;
+
+        font-size: 11px;
+        color: #ffff;
+        padding: 2px 10px;
+        display: flex;
+        align-items: center;
+
+        svg {
+            height: 14px !important;
+            margin-right: 4px;
+            color: #ffff !important;
+        }
+    }
+}
+
+
+.fb-share-button {
+    background-color: #3F51B5;
+
+
+    border-radius: 2px;
+
+    a {
+        font-size: 11px;
+        color: #ffff;
+        padding: 2px 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        height: 14px !important;
+        margin-right: 4px;
     }
 }
 

@@ -75,6 +75,7 @@
                     font-family: 'RobotoSlab-Regular';
                     color: #443846;
                     display: -webkit-box;
+                    text-transform: capitalize;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -89,6 +90,12 @@
                     color: #88756e;
                     margin: 0;
                     line-height: 24px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 3   ;
+                    line-height: 28px;
                 }
             }
 

@@ -12,6 +12,10 @@
     .mainTitle {
         display: flex;
         justify-content: center;
+        text-align: center;
+        @media screen and (max-width: 769px) {
+            text-align: left;
+        }
     }
 
     .description {
@@ -101,7 +105,7 @@
                     }
                 }
 
-                h3,
+                h4,
                 p {
                     margin: 0;
                     color: #ffff;
